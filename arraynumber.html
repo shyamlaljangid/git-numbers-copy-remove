@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array numbers</title>
+</head>
+<body>
+    <div id="wrapper">
+
+    </div>
+    <script>
+        
+        let array =[12,13,25,36,45,255,12,13,25];
+        // let asd= [...new Set(array)];
+        // console.log(asd)
+            let array2 =[];
+
+
+             array.forEach((arr)=>{
+
+             })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+            for(let i=0; i<array.length; i++){
+              
+                for(let j = i +1; j<array.length; j++){
+                if(  array[i] === array[j] ){
+                    array.splice(j,1)
+                }
+
+                }
+                array2.push(array[i])
+                }
+             console.log(array2)
+
+            
+
+
+            // letarray(array);
+            
+
+            // function  letarray(arr){
+            //      for(let a of arr ){
+            //         if (array2.indexOf(a) === -1){
+            //             array2.push(a)
+            //         }
+                  
+            //      }
+            //      console.log(array2)
+            // }
+           
+
+    </script>
+</body>
+</html>
