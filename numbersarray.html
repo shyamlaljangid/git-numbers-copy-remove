@@ -13,13 +13,13 @@
    <script>
     let arr =[12,13,25,36,[45,255,12,13],25,12];
     let ar = [];
-    let A = [];
+    let newarray = [];
     for(let i =0 ; i<arr.length; i++){
         if( typeof arr[i] === "object"){
             for(let j=0 ; j<arr[i].length ;j++){
                 ar.push(arr[i][j])
             }
-           
+
         }
         else{
                 ar.push(arr[i])
@@ -33,9 +33,9 @@
                 ar.splice(a,1)
             }
         }
-        A.push(ar[k])
+        newarray.push(ar[k])
     }
-    console.log(A)
+    console.log(newarray)
    </script>
 </body>
 </html>
