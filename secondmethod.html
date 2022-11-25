@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second mathod</title>
+</head>
+<body>
+    <div id="wrapper">
+
+    </div>
+    <script>
+          let array =[12,13,25,36,45,255,12,13,25,12];
+          let output=[];
+
+          array.forEach((num)=>{
+                if(output.length === 0){
+                    output.push(num)
+                }
+                let numbers = 0
+              output.forEach((e)=>{
+                if(num === e)
+                    numbers= 1
+              })
+              if(numbers === 0){
+                output.push(num)
+              }
+          })
+          console.log(output)
+
+    </script>
+</body>
+</html>
